@@ -151,6 +151,8 @@ def convert_polish_locality_name_to_restricted_in_filesystem(raw_locality_name):
     for c in raw_locality_name.lower():
         if c == 'ą':
             c = 'a'
+        elif c == ' ':
+            c = '_'
         elif c == 'ć':
             c = 'c'
         elif c == 'ę':
