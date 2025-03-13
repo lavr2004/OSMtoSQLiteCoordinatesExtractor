@@ -4,12 +4,12 @@ import os
 import logging
 import datetime
 
-# Настройка базовых путей
+# settings
 ROOT_FOLDERPATH = os.getcwd()
 RESULTS_FOLDERPATH = os.path.join(ROOT_FOLDERPATH, "results")
 LOG_FILEPATH = os.path.join(RESULTS_FOLDERPATH, f"address_finder_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.log")
 
-# Настройка логирования
+# logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s [%(levelname)s] - %(message)s',
